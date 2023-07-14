@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rubik:wght@500&family=Varela+Round&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #09133c;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*  ================ NAVBAR SECTION  ================ */
+
+.navigation div:nth-of-type(1) {
+  margin-top: 0px;
+}
+
+.dropdownMenu {
+  margin-left: 15px;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.nav-link:hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+
+.navBarImage {
+  width: 10%;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand.abs {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+/* ================ INFORMATION SECTION ================ */
+
+#infoSection {
+  height: 80vh;
+  background-color: #09133c;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.InfoTextSection {
+  margin-top: 50px;
+  padding: 0% 5%;
+  text-align: left;
+  max-width: 60rem;
+}
+
+.InfoText {
+  color: white;
+}
+
+.InfoHeaderText {
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+.InfoHeaderText1 {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #929292, 0 3px 0 #929292,
+    0 4px 0 #929292, 0 5px 0 #929292, 0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.PlayerImage1 {
+  filter: drop-shadow(8px 6px 4px black);
+}
+
+/* ================ POPULAR TEAMS SECTION ================ */
+
+#popularTeams {
+  height: 55vh;
+  text-align: left;
+  padding: 0% 14%;
+}
+
+.TeamsHeaderText {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  margin-right: 10px;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #929292, 0 3px 0 #929292,
+    0 4px 0 #929292, 0 5px 0 #929292, 0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+.teamCard1:hover,
+.teamCard2:hover,
+.teamCard3:hover,
+.teamCard4:hover,
+.teamCard5:hover,
+.teamCard6:hover {
+  transform: scale(1.05);
+}
+
+/* ================ STATISTICS SECTION ================ */
+
+#StatsSection {
+  height: 30vh;
+  color: white;
+  padding: 0% 10%;
+  background-color: rgb(43, 43, 43);
+  justify-content: center;
+  text-align: center;
+}
+
+.feature-box {
+  margin-top: 6.5%;
+}
+
+.NumText {
+  font-family: "Rubik", sans-serif;
+}
+
+.featuresText {
+  margin: 0 auto;
+}
+
+/* ================ GETTING STARTED SECTION ================ */
+
+.Start {
+  height: 55vh;
+  background-color: rgb(218, 217, 217);
+  justify-content: center;
+  text-align: center;
+}
+
+.GetStartedHeaderText {
+  font-family: "Rubik", sans-serif;
+  padding-top: 50px;
+}
+
+.Steps {
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.StepOne,
+.StepTwo {
+  margin-right: 90px;
+}
+
+.StartButton {
+  margin-top: 65px;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.StartButton:hover {
+  background-color: rgb(228, 227, 227);
+}
+
+.StartButton:active {
+  box-shadow: 0px 0px 0px 0px;
+  background-color: rgb(228, 227, 227);
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .StartButton {
+    padding: 0.25em 0.75em;
+  }
+}
+
+/* ================ CONTACT SECTION ================ */
+
+#ContactSection {
+  height: 45vh;
+  background-color: rgb(218, 217, 217);
+}
+
+.ContactHeaderText {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ContactCard {
+  transition: all 0.2s ease-in-out;
+}
+
+.ContactCard:hover {
+  transform: scale(1.05);
+}
+
+.ContactCardText {
+  font-size: larger;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  margin-top: 30px;
+}
+
+/* ================ FOOTER SECTION ================ */
+
+.Footer {
+  background-color: #020609;
+  color: white;
+  height: 15vh;
+  margin: 0 auto;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.footerText {
+  font-family: "Rubik", sans-serif;
+  padding-top: 25px;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 7%;
+}
+
+.socialLinks {
+  margin-right: 47px;
+  margin-top: 10px;
+}
+
+.socialLinks i {
+  font-size: x-large;
+  margin-right: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.socialLinks i:hover {
+  transform: scale(1.2);
+}
+
+.Logo{
+  transition: all 0.2s ease-in-out;
+  font-size: x-large;
+  margin-left: 55px;
+  margin-top: 10px;
+}
+
+.Logo:hover{
+  transform: scale(1.2);
+}
+
+/* ================ MAPS SECTION ================ */
+
+.MapPageHeaderText {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  text-shadow: 0 1px 0 #000000, 0 2px 0 #000000, 0 3px 0 #000000,
+    0 4px 0 #000000, 0 5px 0 #000000, 0 6px 1px rgba(0, 0, 0, 0.1),
+    0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+#InputSection {
+  display: flex;
+  height: 93vh;
+  padding: 5% 18%;
+}
+
+.InputDiv {
+  margin-top: 80px;
+  text-align: center;
+}
+
+input {
+  border: 1px solid #999;
+  padding: 8px;
+  width: 320px;
+  margin-top: 20px;
+}
+.no-autocomplete {
+  color: #999;
+  padding: 8px;
+}
+.autocomplete {
+  border: 1px solid #999;
+  margin-left: 155px;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 5px;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(300px + 1rem);
+}
+.autocomplete li {
+  padding: 8px;
+  background-color: white;
+}
+.autocomplete > .active,
+.autocomplete li:hover {
+  background-color: rgb(180, 180, 180);
+  cursor: pointer;
+  font-weight: 700;
+}
+.autocomplete li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
+}
+
+.CountryDiv,
+.ClubDiv {
+  margin-top: 30px;
+}
+
+.SearchButton {
+  margin-top: 45px;
+  margin-left: 37px;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.6em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.SearchButton:hover {
+  background-color: rgb(228, 227, 227);
+}
+
+.SearchButton:active {
+  box-shadow: 0px 0px 0px 0px;
+  background-color: rgb(228, 227, 227);
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .SearchButton {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.PlayerImage2 {
+  filter: drop-shadow(8px 6px 4px black);
+  padding: 0 10%;
+  margin-left: 130px;
+  width: 105%;
+}
+
+.MapSection {
+  height: 88vh;
+  background-color: rgb(218, 217, 217);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.MapDivText {
+  font-family: "Rubik", sans-serif;
+  padding-top: 2%;
+}
+
+.ResetButton {
+  margin-top: 25px;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.6em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.ResetButton:hover {
+  background-color: rgb(228, 227, 227);
+}
+
+.ResetButton:active {
+  box-shadow: 0px 0px 0px 0px;
+  background-color: rgb(228, 227, 227);
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .ResetButton {
+    padding: 0.25em 0.75em;
+  }
+}
