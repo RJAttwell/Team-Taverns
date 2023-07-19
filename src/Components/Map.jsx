@@ -13,17 +13,20 @@ function Map() {
   const [searchClicked, setSearchClicked] = useState(false);
 
   // Set initial center and zoom level
-  const center = { lat: 0, lng: 0 };
+  const center = { lat: 45, lng: -10 };
   const zoom = 3;
 
   return (
     <>
+      {/* Adds the Nav Bar Component */}
       <NavBar />
 
+      {/* Input section. This will be where the user inputs which country they are looking  for bars in and what club the bars should be associated with */}
       <section id="InputSection">
         <div className="InputDiv">
           <h1 className="MapPageHeaderText">Type in your Location and Club</h1>
 
+          {/* To input country */}
           <div className="CountryDiv">
             <i
               class="fa-solid fa-earth-europe"
@@ -35,7 +38,9 @@ function Map() {
               }}
             ></i>
 
+            {/* Component that'll provide auto complete list */}
             <CountryAutoComplete
+              setSelectedCountry={setSelectedCountry}
               suggestions={[
                 "Australia",
                 "Belgium",
@@ -43,6 +48,7 @@ function Map() {
                 "England",
                 "France",
                 "Germany",
+                "Hong Kong",
                 "Ireland",
                 "Italy",
                 "Japan",
@@ -55,6 +61,7 @@ function Map() {
             />
           </div>
 
+          {/* To input club */}
           <div className="ClubDiv">
             <i
               class="fa-regular fa-futbol"
@@ -66,7 +73,9 @@ function Map() {
               }}
             ></i>
 
+            {/* Component that'll provide auto complete list */}
             <ClubAutocomplete
+              setSelectedClub={setSelectedClub}
               suggestions={[
                 "Arsenal",
                 "AC Milan",
@@ -106,6 +115,7 @@ function Map() {
         </div>
       </section>
 
+      {/* Stores the map which data is displayed on */}
       <section id="MapSection">
         <h1 className="MapDivText">Results</h1>
         <LoadScript googleMapsApiKey="AIzaSyC5TQRQXVpsBHskHxxifLJfl9w53tp4hqo">
@@ -126,6 +136,7 @@ function Map() {
           </div>
         </LoadScript>
 
+        {/* Will reload the entire page */}
         <a href="/map">
           <button className="ResetButton">Reset</button>
         </a>
