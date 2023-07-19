@@ -50,6 +50,17 @@ code {
   }
 }
 
+.NavLogo{
+  transition: all 0.2s ease-in-out;
+  font-size: x-large;
+  margin-top: 5px;
+  padding-right: 10px;
+}
+
+.NavLogo:hover{
+  transform: rotate3d(360);
+}
+
 /* ================ INFORMATION SECTION ================ */
 
 #infoSection {
@@ -79,8 +90,8 @@ code {
 .InfoHeaderText1 {
   color: white;
   font-family: "Rubik", sans-serif;
-  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #929292, 0 3px 0 #929292,
-    0 4px 0 #929292, 0 5px 0 #929292, 0 6px 1px rgba(0, 0, 0, 0.1),
+  text-shadow: 0 1px 0 #000000, 0 2px 0 #000000, 0 3px 0 #000000,
+    0 4px 0 #000000, 0 5px 0 #000000, 0 6px 1px rgba(0, 0, 0, 0.1),
     0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
     0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
@@ -88,6 +99,11 @@ code {
 
 .PlayerImage1 {
   filter: drop-shadow(8px 6px 4px black);
+  transition: 0.2s all ease-in-out;
+}
+
+.PlayerImage1:hover{
+  transform: scale(1.03);
 }
 
 /* ================ POPULAR TEAMS SECTION ================ */
@@ -102,8 +118,8 @@ code {
   font-family: "Rubik", sans-serif;
   color: white;
   margin-right: 10px;
-  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #929292, 0 3px 0 #929292,
-    0 4px 0 #929292, 0 5px 0 #929292, 0 6px 1px rgba(0, 0, 0, 0.1),
+  text-shadow: 0 1px 0 #000000, 0 2px 0 #000000, 0 3px 0 #000000,
+    0 4px 0 #000000, 0 5px 0 #000000, 0 6px 1px rgba(0, 0, 0, 0.1),
     0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
     0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
@@ -115,6 +131,7 @@ code {
 .teamCard4:hover,
 .teamCard5:hover,
 .teamCard6:hover {
+  transition: all .3s linear;
   transform: scale(1.05);
 }
 
@@ -208,7 +225,7 @@ code {
 /* ================ CONTACT SECTION ================ */
 
 #ContactSection {
-  height: 45vh;
+  height: 58vh;
   background-color: rgb(218, 217, 217);
 }
 
@@ -392,10 +409,16 @@ input {
   filter: drop-shadow(8px 6px 4px black);
   padding: 0 10%;
   margin-left: 130px;
-  width: 105%;
+  width: 110%;
+  transition: 0.2s all ease-in-out;
+
 }
 
-.MapSection {
+.PlayerImage2:hover{
+  transform: scale(1.03);
+}
+
+#MapSection {
   height: 88vh;
   background-color: rgb(218, 217, 217);
   justify-content: center;
