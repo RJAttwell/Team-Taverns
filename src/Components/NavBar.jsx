@@ -4,8 +4,9 @@ function NavBar() {
   return (
     <div className="navigation">
       <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <div className="container">
+        <div className="container" style={{display: "flex", fontFamily: "Rubik"}}>
           <NavLink className="navbar-brand" to="/">
+            <i class="fa-solid fa-futbol NavLogo" style={{ color: "#ffffff" }}></i>
             Team Taverns
           </NavLink>
           <div>

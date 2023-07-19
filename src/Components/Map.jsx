@@ -8,6 +8,10 @@ import CountryAutoComplete from "./CountryAutoComplete";
 import ClubAutocomplete from "./ClubAutoComplete";
 
 function Map() {
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedClub, setSelectedClub] = useState("");
+  const [searchClicked, setSearchClicked] = useState(false);
+
   // Set initial center and zoom level
   const center = { lat: 0, lng: 0 };
   const zoom = 3;
@@ -47,6 +51,7 @@ function Map() {
                 "Sweden",
                 "United States of America",
               ]}
+              onChange={(value) => setSelectedCountry(value)}
             />
           </div>
 
@@ -73,19 +78,23 @@ function Map() {
                 "Manchester United",
                 "Liverpool",
                 "Real Madrid",
-                "Tottenham",
+                "Tottenham Hotspurs",
                 "West Ham United",
               ]}
+              onChange={(value) => setSelectedClub(value)}
             />
           </div>
 
-          <button
-            type="submit"
-            className="SearchButton"
-            style={{ width: "300px", height: "50px" }}
-          >
-            Search
-          </button>
+          <a href="#MapSection">
+            <button
+              type="submit"
+              className="SearchButton"
+              onClick={() => setSearchClicked(true)}
+              style={{ width: "300px", height: "50px" }}
+            >
+              Search
+            </button>
+          </a>
         </div>
 
         <div className="ImageDiv">
@@ -97,7 +106,7 @@ function Map() {
         </div>
       </section>
 
-      <div className="MapSection">
+      <section id="MapSection">
         <h1 className="MapDivText">Results</h1>
         <LoadScript googleMapsApiKey="AIzaSyC5TQRQXVpsBHskHxxifLJfl9w53tp4hqo">
           <div
@@ -107,14 +116,20 @@ function Map() {
               marginTop: "50px",
             }}
           >
-            <MapComponent center={center} zoom={zoom} />
+            <MapComponent
+              center={center}
+              zoom={zoom}
+              selectedCountry={selectedCountry}
+              selectedClub={selectedClub}
+              searchClicked={searchClicked}
+            />
           </div>
         </LoadScript>
 
         <a href="/map">
           <button className="ResetButton">Reset</button>
         </a>
-      </div>
+      </section>
 
       <Footer />
     </>
