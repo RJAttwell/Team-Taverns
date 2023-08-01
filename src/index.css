@@ -40,24 +40,14 @@ code {
   width: 10%;
 }
 
-@media (min-width: 768px) {
-  .navbar-brand.abs {
-    position: absolute;
-    width: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-}
-
-.NavLogo{
+.NavLogo {
   transition: all 0.2s ease-in-out;
   font-size: x-large;
   margin-top: 5px;
   padding-right: 10px;
 }
 
-.NavLogo:hover{
+.NavLogo:hover {
   transform: rotate3d(360);
 }
 
@@ -102,7 +92,7 @@ code {
   transition: 0.2s all ease-in-out;
 }
 
-.PlayerImage1:hover{
+.PlayerImage1:hover {
   transform: scale(1.03);
 }
 
@@ -131,7 +121,7 @@ code {
 .teamCard4:hover,
 .teamCard5:hover,
 .teamCard6:hover {
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   transform: scale(1.05);
 }
 
@@ -216,12 +206,6 @@ code {
   left: 5px;
 }
 
-@media (min-width: 768px) {
-  .StartButton {
-    padding: 0.25em 0.75em;
-  }
-}
-
 /* ================ CONTACT SECTION ================ */
 
 #ContactSection {
@@ -293,14 +277,14 @@ code {
   transform: scale(1.2);
 }
 
-.Logo{
+.Logo {
   transition: all 0.2s ease-in-out;
   font-size: x-large;
   margin-left: 55px;
   margin-top: 10px;
 }
 
-.Logo:hover{
+.Logo:hover {
   transform: scale(1.2);
 }
 
@@ -399,22 +383,15 @@ input {
   left: 5px;
 }
 
-@media (min-width: 768px) {
-  .SearchButton {
-    padding: 0.25em 0.75em;
-  }
-}
-
 .PlayerImage2 {
   filter: drop-shadow(8px 6px 4px black);
   padding: 0 10%;
   margin-left: 130px;
   width: 110%;
   transition: 0.2s all ease-in-out;
-
 }
 
-.PlayerImage2:hover{
+.PlayerImage2:hover {
   transform: scale(1.03);
 }
 
@@ -462,8 +439,112 @@ input {
   left: 5px;
 }
 
-@media (min-width: 768px) {
+/* ================================= MEDIA QUERIES ======================================== */
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .StepOne,
+  .StepTwo {
+    margin-right: 40px;
+  }
+
+  .StartButton {
+    padding: 0.25em 0.75em;
+  }
+
+  .SearchButton {
+    padding: 0.25em 0.75em;
+  }
+
   .ResetButton {
     padding: 0.25em 0.75em;
+  }
+
+  .navbar-brand.abs {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .PlayerImage1,
+  .PlayerImage2 {
+    display: none;
+  }
+
+  #infoSection {
+    height: 30vh;
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .InfoTextSection{
+    text-align: center;
+  }
+
+  #StatsSection {
+    height: 10vh;
+  }
+
+  .Start {
+    height: 30vh;
+  }
+
+  #ContactSection {
+    height: 32vh;
+  }
+
+  .Footer {
+    height: 10vh;
+    bottom: 0;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #InputSection {
+    height: 35vh;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #MapSection {
+    height: 52vh;
+  }
+
+  .ResetButton {
+    margin-top: 50px;
+  }
+
+  .MapDivText {
+    padding-top: 43px;
+  }
+
+  #popularTeams {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .TeamContainer {
+    flex-wrap: wrap;
+  }
+
+  .teamCard1,
+  .teamCard2,
+  .teamCard3 {
+    margin-bottom: 28px;
+  }
+
+  .teamCard4,
+  .teamCard5,
+  .teamCard6 {
+    margin-right: 24px;
+  }
+
+  .ContactCard {
+    min-width: calc(
+      100% - 10px
+    ); /* Two cards per row with a 10px margin between them */
+    max-width: calc(50% - 10px);
   }
 }
