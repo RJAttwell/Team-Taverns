@@ -118,7 +118,7 @@ function Map() {
       {/* Stores the map which data is displayed on */}
       <section id="MapSection">
         <h1 className="MapDivText">Results</h1>
-        <LoadScript googleMapsApiKey="AIzaSyC5TQRQXVpsBHskHxxifLJfl9w53tp4hqo">
+        <LoadScript googleMapsApiKey="API-KEY">
           <div
             style={{
               marginLeft: "auto",
